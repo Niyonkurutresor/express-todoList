@@ -1,0 +1,76 @@
+*{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+    background-image: url(../folder1/pic\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.container{
+    width: 30%;
+    height: fit-content;
+    box-shadow: 0 0 6px 2px;
+    text-align: center;
+    background-color: peachpuff;
+}
+.head{
+    background-color: violet;
+    width: 80%;
+    height: 2.5rem;
+    margin: auto;
+    border-radius: .2rem;
+}
+ul li{
+    border-radius: .5rem;
+    margin: .3rem auto;
+    text-align: left;
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    background-color: white;
+}
+input{
+    margin-right: 1rem;
+}
+
+.addNew{
+    background-color: white;
+    width: 75%;
+    height: 3rem;
+    border-radius: .2rem;
+    margin: auto auto 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.addNew input{
+    width: 80%;
+    height:100%;
+    border: none;
+    outline: none;
+    font-size: larger;
+}
+::placeholder{
+    text-align: center;
+    color: green;
+}
+.add{
+    background-color: violet;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+   font-size: xx-large;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   outline: none;
+   border:none;
+}
