@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>location</th>
+                    <th>email</th>
+                    <th>department</th>
+                    <th>perform</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <%for(let i=0; i<id.length; i++){%>
+                <tr>
+                    <td><%=id[i].id%></td>
+                    <td><%=name[i].name%></td>
+                    <td><%=age[i].age%></td>
+                    <td><%=location[i].location%></td>
+                    <td><%=email[i].email%></td>
+                    <td><%=department[i].department%></td>
+                    <td>
+                        <form action="/" method="post">
+                            <button type="submit" name="update" value="<%=id[i].id%>">update</button>
+                            <button type="submit" name="delete" value="<%=id[i].id%>">delete</button>
+
+                        </form>
+                    </td>
+                </tr>
+                <%}%>
+
+            </tbody>
+        </table>
+        <form class="createcontent" action="/" method="post">
+            <h1>Add user</h1>
+            <input type="text" name="id" placeholder="id" value="<%=fid%>">
+            <br>
+            <input type="text" name="name" placeholder="name" value="<%=fname%>">
+            <br>
+            <input type="text" name="age" placeholder="age" value="<%=fage%>">
+            <br>
+            <input type="text" name="location" placeholder="location" value="<%=flocation%>">
+            <br>
+            <input type="email" name="email" placeholder="email" value="<%=femail%>">
+            <br>
+            <input type="text" name="department" placeholder="department" value="<%=fdepartment%>">
+            <br>
+            <button type="submit" name="userinfo" value="sendData">submit</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

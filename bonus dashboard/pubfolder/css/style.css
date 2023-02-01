@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin-top: 5rem;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5rem;
+}
+tr :nth-child(odd){
+    background-color: gray;
+}
+
+.createcontent{
+    margin-top: 2rem;
+}
+.createcontent input{
+    width: 70%;
+    height: 2rem;
+    outline: none;
+    padding: .2rem .5rem;
+
+    margin-bottom: .2rem;
+}
+::placeholder{
+    /* text-align: center; */
+    font-size: larger;
+    color: green;
+    text-transform: capitalize;
+}
+.createcontent button{
+    margin-top: 1rem;
+    width: 7rem;
+    height: 2rem;
+}
