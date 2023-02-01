@@ -37,8 +37,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/personlregistration');
 
 rout.get('/',(req,res)=>{
 
-    // reding data from database.
-    //searching in database if curently there is no data.
+    // reading data from database.
+    //searching in database. if curently there is no data.
     User.find({},(err,foundList)=>{
         if(foundList.length === 0){
             res.render('index',{
@@ -79,10 +79,9 @@ rout.get('/',(req,res)=>{
 
 
 
-//post user information
+//post new user information
 rout.post('/',(req,res)=>{
     const button = req.body.userinfo
-    const userInf = req.body
     const update = req.body.update
     const delet = req.body.delete
     //incase submit button is clecked.
@@ -95,7 +94,7 @@ rout.post('/',(req,res)=>{
             email: req.body.email,
             department: req.body.department
         })
-        //pushing inserted element into database
+        //pushing  element into database
         User.findOne({id:req.body.id},(err,foundItem)=>{
             if(!err){
                 if(foundItem){
